@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[TOTOResultSet getResultDate]:TOTOResultSet.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "resultDate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[TOTOResultVC sendSms:recipientList:]:TOTOResultVC.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PastResultsTVC refreshView]:PastResultsTVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "temp.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__copy_helper_block_:PastResultsTVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "temp">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__26-[TOTOResultVC getResult:]_block_invoke:TOTOResultVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.resultSet.winningPrizeGroups">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[WinningBoothsVC viewDidLoad]:WinningBoothsVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[txtWinningBooths.attributedText  description]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__22-[JackpotVC getResult]_block_invoke37:JackpotVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.resultSet.jackpotDate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[TOTOResultVC updateUI]:TOTOResultVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.navigationItem.title">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PageAppVC viewControllerAtIndex:]:PageAppVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[dataViewController.resultSet getResultDateForDisplay];">
+            </PersistentString>
+            <PersistentString
+               value = "self.navigationItem.title">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[TOTOResultSet initWithDictionary:]:TOTOResultSet.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PastResultsTVC tableView:cellForRowAtIndexPath:]:PastResultsTVC.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

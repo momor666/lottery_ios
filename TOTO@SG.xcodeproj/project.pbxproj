@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6139DA991956FC2100F76ACC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6139DA981956FC2100F76ACC /* UIKit.framework */; };
+		6139DA9B1956FC2100F76ACC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6139DA9A1956FC2100F76ACC /* Foundation.framework */; };
+		6139DA9D1956FC2100F76ACC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6139DA9C1956FC2100F76ACC /* CoreGraphics.framework */; };
+		6139DAA31956FC2100F76ACC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6139DAA11956FC2100F76ACC /* InfoPlist.strings */; };
+		6139DAA51956FC2100F76ACC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6139DAA41956FC2100F76ACC /* main.m */; };
+		6139DAA91956FC2100F76ACC /* TOTOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6139DAA81956FC2100F76ACC /* TOTOAppDelegate.m */; };
+		6139DAAB1956FC2100F76ACC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6139DAAA1956FC2100F76ACC /* Default.png */; };
+		6139DAAD1956FC2100F76ACC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6139DAAC1956FC2100F76ACC /* Default@2x.png */; };
+		6139DAAF1956FC2100F76ACC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6139DAAE1956FC2100F76ACC /* Default-568h@2x.png */; };
+		6139DAB21956FC2100F76ACC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6139DAB01956FC2100F76ACC /* MainStoryboard.storyboard */; };
+		6139DABD1956FC2100F76ACC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6139DABC1956FC2100F76ACC /* SenTestingKit.framework */; };
+		6139DABE1956FC2100F76ACC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6139DA981956FC2100F76ACC /* UIKit.framework */; };
+		6139DABF1956FC2100F76ACC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6139DA9A1956FC2100F76ACC /* Foundation.framework */; };
+		6139DAC71956FC2100F76ACC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6139DAC51956FC2100F76ACC /* InfoPlist.strings */; };
+		6139DACA1956FC2100F76ACC /* TOTOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6139DAC91956FC2100F76ACC /* TOTOTests.m */; };
+		6139DAD51958824500F76ACC /* TOTOResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6139DAD41958824500F76ACC /* TOTOResultSet.m */; };
+		61512D01198E165000205E98 /* next_jackpot.png in Resources */ = {isa = PBXBuildFile; fileRef = 61512D00198E165000205E98 /* next_jackpot.png */; };
+		61512D03198E646300205E98 /* dynamic_blue_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 61512D02198E646300205E98 /* dynamic_blue_right.png */; };
+		61512D061997CAD300205E98 /* Small App Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 61512D051997CAD300205E98 /* Small App Icon.png */; };
+		61512D081997CAEC00205E98 /* Big App Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 61512D071997CAEC00205E98 /* Big App Icon.png */; };
+		615D8768196465EE00726518 /* PastResultsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 615D8767196465EE00726518 /* PastResultsTVC.m */; };
+		617E9EDB195B2DCD00C03153 /* TOTOResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 617E9EDA195B2DCD00C03153 /* TOTOResultVC.m */; };
+		617E9EE1195E9AA000C03153 /* WinningBoothsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 617E9EE0195E9AA000C03153 /* WinningBoothsVC.m */; };
+		6180A63C195F1F86000DCC52 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6180A63B195F1F86000DCC52 /* MessageUI.framework */; };
+		6187B4F2198D092000615B94 /* PageAppVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6187B4F1198D092000615B94 /* PageAppVC.m */; };
+		6187B4F5198D096000615B94 /* JackpotVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6187B4F4198D096000615B94 /* JackpotVC.m */; };
+		618908DA1985420800E6C698 /* check_my_nos.png in Resources */ = {isa = PBXBuildFile; fileRef = 618908D81985420800E6C698 /* check_my_nos.png */; };
+		618908DB1985420800E6C698 /* today_result.png in Resources */ = {isa = PBXBuildFile; fileRef = 618908D91985420800E6C698 /* today_result.png */; };
+		618908DD198543C900E6C698 /* prize.png in Resources */ = {isa = PBXBuildFile; fileRef = 618908DC198543C900E6C698 /* prize.png */; };
+		618908E1198544CE00E6C698 /* PastResults.png in Resources */ = {isa = PBXBuildFile; fileRef = 618908E0198544CE00E6C698 /* PastResults.png */; };
+		6189367E19600C4B00516FA9 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6189367D19600C4B00516FA9 /* Utilities.m */; };
+		619C49D3198D400800F25770 /* forwardIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 619C49D2198D400800F25770 /* forwardIcon.png */; };
+		61E3D562195EBFE800901852 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E3D561195EBFE800901852 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6139DAC01956FC2100F76ACC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6139DA8D1956FC2100F76ACC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6139DA941956FC2100F76ACC;
+			remoteInfo = TOTO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6139DA951956FC2100F76ACC /* TOTO@SG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TOTO@SG.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6139DA981956FC2100F76ACC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6139DA9A1956FC2100F76ACC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6139DA9C1956FC2100F76ACC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6139DAA01956FC2100F76ACC /* TOTO@SG-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TOTO@SG-Info.plist"; sourceTree = "<group>"; };
+		6139DAA21956FC2100F76ACC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6139DAA41956FC2100F76ACC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6139DAA61956FC2100F76ACC /* TOTO@SG-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TOTO@SG-Prefix.pch"; sourceTree = "<group>"; };
+		6139DAA71956FC2100F76ACC /* TOTOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOTOAppDelegate.h; sourceTree = "<group>"; };
+		6139DAA81956FC2100F76ACC /* TOTOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOTOAppDelegate.m; sourceTree = "<group>"; };
+		6139DAAA1956FC2100F76ACC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		6139DAAC1956FC2100F76ACC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		6139DAAE1956FC2100F76ACC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6139DAB11956FC2100F76ACC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		6139DABB1956FC2100F76ACC /* TOTO@SGTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TOTO@SGTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6139DABC1956FC2100F76ACC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		6139DAC41956FC2100F76ACC /* TOTO@SGTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TOTO@SGTests-Info.plist"; sourceTree = "<group>"; };
+		6139DAC61956FC2100F76ACC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6139DAC81956FC2100F76ACC /* TOTOTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOTOTests.h; sourceTree = "<group>"; };
+		6139DAC91956FC2100F76ACC /* TOTOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOTOTests.m; sourceTree = "<group>"; };
+		6139DAD31958824500F76ACC /* TOTOResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOTOResultSet.h; sourceTree = "<group>"; };
+		6139DAD41958824500F76ACC /* TOTOResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOTOResultSet.m; sourceTree = "<group>"; };
+		61512D00198E165000205E98 /* next_jackpot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = next_jackpot.png; path = Resources/Images/next_jackpot.png; sourceTree = "<group>"; };
+		61512D02198E646300205E98 /* dynamic_blue_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dynamic_blue_right.png; path = Resources/Images/dynamic_blue_right.png; sourceTree = "<group>"; };
+		61512D051997CAD300205E98 /* Small App Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Small App Icon.png"; path = "../Small App Icon.png"; sourceTree = "<group>"; };
+		61512D071997CAEC00205E98 /* Big App Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Big App Icon.png"; path = "../Big App Icon.png"; sourceTree = "<group>"; };
+		615D8766196465EE00726518 /* PastResultsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastResultsTVC.h; sourceTree = "<group>"; };
+		615D8767196465EE00726518 /* PastResultsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastResultsTVC.m; sourceTree = "<group>"; };
+		617E9ED9195B2DCD00C03153 /* TOTOResultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOTOResultVC.h; sourceTree = "<group>"; };
+		617E9EDA195B2DCD00C03153 /* TOTOResultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOTOResultVC.m; sourceTree = "<group>"; };
+		617E9EDF195E9AA000C03153 /* WinningBoothsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinningBoothsVC.h; sourceTree = "<group>"; };
+		617E9EE0195E9AA000C03153 /* WinningBoothsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinningBoothsVC.m; sourceTree = "<group>"; };
+		6180A63B195F1F86000DCC52 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		6187B4F0198D092000615B94 /* PageAppVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageAppVC.h; sourceTree = "<group>"; };
+		6187B4F1198D092000615B94 /* PageAppVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageAppVC.m; sourceTree = "<group>"; };
+		6187B4F3198D096000615B94 /* JackpotVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JackpotVC.h; sourceTree = "<group>"; };
+		6187B4F4198D096000615B94 /* JackpotVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JackpotVC.m; sourceTree = "<group>"; };
+		618908D81985420800E6C698 /* check_my_nos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = check_my_nos.png; path = Resources/Images/check_my_nos.png; sourceTree = "<group>"; };
+		618908D91985420800E6C698 /* today_result.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = today_result.png; path = Resources/Images/today_result.png; sourceTree = "<group>"; };
+		618908DC198543C900E6C698 /* prize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = prize.png; path = Resources/Images/prize.png; sourceTree = "<group>"; };
+		618908E0198544CE00E6C698 /* PastResults.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PastResults.png; path = Resources/Images/PastResults.png; sourceTree = "<group>"; };
+		6189367C19600C4B00516FA9 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		6189367D19600C4B00516FA9 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		619C49D2198D400800F25770 /* forwardIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = forwardIcon.png; path = Resources/Images/forwardIcon.png; sourceTree = "<group>"; };
+		61E3D561195EBFE800901852 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6139DA921956FC2100F76ACC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6180A63C195F1F86000DCC52 /* MessageUI.framework in Frameworks */,
+				61E3D562195EBFE800901852 /* QuartzCore.framework in Frameworks */,
+				6139DA991956FC2100F76ACC /* UIKit.framework in Frameworks */,
+				6139DA9B1956FC2100F76ACC /* Foundation.framework in Frameworks */,
+				6139DA9D1956FC2100F76ACC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6139DAB71956FC2100F76ACC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6139DABD1956FC2100F76ACC /* SenTestingKit.framework in Frameworks */,
+				6139DABE1956FC2100F76ACC /* UIKit.framework in Frameworks */,
+				6139DABF1956FC2100F76ACC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6139DA8C1956FC2100F76ACC = {
+			isa = PBXGroup;
+			children = (
+				6180A63B195F1F86000DCC52 /* MessageUI.framework */,
+				61E3D561195EBFE800901852 /* QuartzCore.framework */,
+				6139DA9E1956FC2100F76ACC /* TOTO */,
+				6139DAC21956FC2100F76ACC /* TOTOTests */,
+				6139DA971956FC2100F76ACC /* Frameworks */,
+				6139DA961956FC2100F76ACC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6139DA961956FC2100F76ACC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6139DA951956FC2100F76ACC /* TOTO@SG.app */,
+				6139DABB1956FC2100F76ACC /* TOTO@SGTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6139DA971956FC2100F76ACC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6139DA981956FC2100F76ACC /* UIKit.framework */,
+				6139DA9A1956FC2100F76ACC /* Foundation.framework */,
+				6139DA9C1956FC2100F76ACC /* CoreGraphics.framework */,
+				6139DABC1956FC2100F76ACC /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6139DA9E1956FC2100F76ACC /* TOTO */ = {
+			isa = PBXGroup;
+			children = (
+				6187B4F3198D096000615B94 /* JackpotVC.h */,
+				6187B4F4198D096000615B94 /* JackpotVC.m */,
+				6187B4F0198D092000615B94 /* PageAppVC.h */,
+				6187B4F1198D092000615B94 /* PageAppVC.m */,
+				6139DAA71956FC2100F76ACC /* TOTOAppDelegate.h */,
+				6139DAA81956FC2100F76ACC /* TOTOAppDelegate.m */,
+				6139DAB01956FC2100F76ACC /* MainStoryboard.storyboard */,
+				6139DA9F1956FC2100F76ACC /* Supporting Files */,
+				6139DAD31958824500F76ACC /* TOTOResultSet.h */,
+				6139DAD41958824500F76ACC /* TOTOResultSet.m */,
+				617E9ED9195B2DCD00C03153 /* TOTOResultVC.h */,
+				617E9EDA195B2DCD00C03153 /* TOTOResultVC.m */,
+				617E9EDF195E9AA000C03153 /* WinningBoothsVC.h */,
+				617E9EE0195E9AA000C03153 /* WinningBoothsVC.m */,
+				6189367C19600C4B00516FA9 /* Utilities.h */,
+				6189367D19600C4B00516FA9 /* Utilities.m */,
+				615D8766196465EE00726518 /* PastResultsTVC.h */,
+				615D8767196465EE00726518 /* PastResultsTVC.m */,
+			);
+			path = TOTO;
+			sourceTree = "<group>";
+		};
+		6139DA9F1956FC2100F76ACC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				61512D051997CAD300205E98 /* Small App Icon.png */,
+				61512D071997CAEC00205E98 /* Big App Icon.png */,
+				61512D041997CA1800205E98 /* App Icons */,
+				61512D02198E646300205E98 /* dynamic_blue_right.png */,
+				61512D00198E165000205E98 /* next_jackpot.png */,
+				619C49D2198D400800F25770 /* forwardIcon.png */,
+				618908E0198544CE00E6C698 /* PastResults.png */,
+				618908DC198543C900E6C698 /* prize.png */,
+				618908D81985420800E6C698 /* check_my_nos.png */,
+				618908D91985420800E6C698 /* today_result.png */,
+				6139DAA01956FC2100F76ACC /* TOTO@SG-Info.plist */,
+				6139DAA11956FC2100F76ACC /* InfoPlist.strings */,
+				6139DAA41956FC2100F76ACC /* main.m */,
+				6139DAA61956FC2100F76ACC /* TOTO@SG-Prefix.pch */,
+				6139DAAA1956FC2100F76ACC /* Default.png */,
+				6139DAAC1956FC2100F76ACC /* Default@2x.png */,
+				6139DAAE1956FC2100F76ACC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6139DAC21956FC2100F76ACC /* TOTOTests */ = {
+			isa = PBXGroup;
+			children = (
+				6139DAC81956FC2100F76ACC /* TOTOTests.h */,
+				6139DAC91956FC2100F76ACC /* TOTOTests.m */,
+				6139DAC31956FC2100F76ACC /* Supporting Files */,
+			);
+			path = TOTOTests;
+			sourceTree = "<group>";
+		};
+		6139DAC31956FC2100F76ACC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6139DAC41956FC2100F76ACC /* TOTO@SGTests-Info.plist */,
+				6139DAC51956FC2100F76ACC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61512D041997CA1800205E98 /* App Icons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "App Icons";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6139DA941956FC2100F76ACC /* TOTO@SG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6139DACD1956FC2100F76ACC /* Build configuration list for PBXNativeTarget "TOTO@SG" */;
+			buildPhases = (
+				6139DA911956FC2100F76ACC /* Sources */,
+				6139DA921956FC2100F76ACC /* Frameworks */,
+				6139DA931956FC2100F76ACC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TOTO@SG";
+			productName = TOTO;
+			productReference = 6139DA951956FC2100F76ACC /* TOTO@SG.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6139DABA1956FC2100F76ACC /* TOTO@SGTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6139DAD01956FC2100F76ACC /* Build configuration list for PBXNativeTarget "TOTO@SGTests" */;
+			buildPhases = (
+				6139DAB61956FC2100F76ACC /* Sources */,
+				6139DAB71956FC2100F76ACC /* Frameworks */,
+				6139DAB81956FC2100F76ACC /* Resources */,
+				6139DAB91956FC2100F76ACC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6139DAC11956FC2100F76ACC /* PBXTargetDependency */,
+			);
+			name = "TOTO@SGTests";
+			productName = TOTOTests;
+			productReference = 6139DABB1956FC2100F76ACC /* TOTO@SGTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6139DA8D1956FC2100F76ACC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TOTO;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "USV Solutions";
+			};
+			buildConfigurationList = 6139DA901956FC2100F76ACC /* Build configuration list for PBXProject "TOTO@SG" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6139DA8C1956FC2100F76ACC;
+			productRefGroup = 6139DA961956FC2100F76ACC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6139DA941956FC2100F76ACC /* TOTO@SG */,
+				6139DABA1956FC2100F76ACC /* TOTO@SGTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6139DA931956FC2100F76ACC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6139DAA31956FC2100F76ACC /* InfoPlist.strings in Resources */,
+				6139DAAB1956FC2100F76ACC /* Default.png in Resources */,
+				6139DAAD1956FC2100F76ACC /* Default@2x.png in Resources */,
+				6139DAAF1956FC2100F76ACC /* Default-568h@2x.png in Resources */,
+				6139DAB21956FC2100F76ACC /* MainStoryboard.storyboard in Resources */,
+				618908DA1985420800E6C698 /* check_my_nos.png in Resources */,
+				618908DB1985420800E6C698 /* today_result.png in Resources */,
+				618908DD198543C900E6C698 /* prize.png in Resources */,
+				618908E1198544CE00E6C698 /* PastResults.png in Resources */,
+				619C49D3198D400800F25770 /* forwardIcon.png in Resources */,
+				61512D01198E165000205E98 /* next_jackpot.png in Resources */,
+				61512D03198E646300205E98 /* dynamic_blue_right.png in Resources */,
+				61512D061997CAD300205E98 /* Small App Icon.png in Resources */,
+				61512D081997CAEC00205E98 /* Big App Icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6139DAB81956FC2100F76ACC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6139DAC71956FC2100F76ACC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6139DAB91956FC2100F76ACC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6139DA911956FC2100F76ACC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6139DAA51956FC2100F76ACC /* main.m in Sources */,
+				6139DAA91956FC2100F76ACC /* TOTOAppDelegate.m in Sources */,
+				6139DAD51958824500F76ACC /* TOTOResultSet.m in Sources */,
+				617E9EDB195B2DCD00C03153 /* TOTOResultVC.m in Sources */,
+				617E9EE1195E9AA000C03153 /* WinningBoothsVC.m in Sources */,
+				6189367E19600C4B00516FA9 /* Utilities.m in Sources */,
+				615D8768196465EE00726518 /* PastResultsTVC.m in Sources */,
+				6187B4F2198D092000615B94 /* PageAppVC.m in Sources */,
+				6187B4F5198D096000615B94 /* JackpotVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6139DAB61956FC2100F76ACC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6139DACA1956FC2100F76ACC /* TOTOTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6139DAC11956FC2100F76ACC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6139DA941956FC2100F76ACC /* TOTO@SG */;
+			targetProxy = 6139DAC01956FC2100F76ACC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6139DAA11956FC2100F76ACC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6139DAA21956FC2100F76ACC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6139DAB01956FC2100F76ACC /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6139DAB11956FC2100F76ACC /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		6139DAC51956FC2100F76ACC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6139DAC61956FC2100F76ACC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6139DACB1956FC2100F76ACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos6.1;
+			};
+			name = Debug;
+		};
+		6139DACC1956FC2100F76ACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos6.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6139DACE1956FC2100F76ACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TOTO/TOTO@SG-Prefix.pch";
+				INFOPLIST_FILE = "TOTO/TOTO@SG-Info.plist";
+				PRODUCT_NAME = "TOTO@SG";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6139DACF1956FC2100F76ACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TOTO/TOTO@SG-Prefix.pch";
+				INFOPLIST_FILE = "TOTO/TOTO@SG-Info.plist";
+				PRODUCT_NAME = "TOTO@SG";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6139DAD11956FC2100F76ACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TOTO.app/TOTO";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TOTO/TOTO-Prefix.pch";
+				INFOPLIST_FILE = "TOTOTests/TOTO@SGTests-Info.plist";
+				PRODUCT_NAME = "TOTO@SGTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		6139DAD21956FC2100F76ACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TOTO.app/TOTO";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TOTO/TOTO-Prefix.pch";
+				INFOPLIST_FILE = "TOTOTests/TOTO@SGTests-Info.plist";
+				PRODUCT_NAME = "TOTO@SGTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6139DA901956FC2100F76ACC /* Build configuration list for PBXProject "TOTO@SG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6139DACB1956FC2100F76ACC /* Debug */,
+				6139DACC1956FC2100F76ACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6139DACD1956FC2100F76ACC /* Build configuration list for PBXNativeTarget "TOTO@SG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6139DACE1956FC2100F76ACC /* Debug */,
+				6139DACF1956FC2100F76ACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6139DAD01956FC2100F76ACC /* Build configuration list for PBXNativeTarget "TOTO@SGTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6139DAD11956FC2100F76ACC /* Debug */,
+				6139DAD21956FC2100F76ACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6139DA8D1956FC2100F76ACC /* Project object */;
+}
