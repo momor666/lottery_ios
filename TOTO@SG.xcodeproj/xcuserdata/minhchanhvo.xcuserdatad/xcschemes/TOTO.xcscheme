@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6139DA941956FC2100F76ACC"
-               BuildableName = "TOTO.app"
+               BuildableName = "TOTO@SG.app"
                BlueprintName = "TOTO@SG"
                ReferencedContainer = "container:TOTO@SG.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6139DABA1956FC2100F76ACC"
-               BuildableName = "TOTOTests.octest"
+               BuildableName = "TOTO@SGTests.octest"
                BlueprintName = "TOTO@SGTests"
                ReferencedContainer = "container:TOTO@SG.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6139DA941956FC2100F76ACC"
-            BuildableName = "TOTO.app"
+            BuildableName = "TOTO@SG.app"
             BlueprintName = "TOTO@SG"
             ReferencedContainer = "container:TOTO@SG.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6139DA941956FC2100F76ACC"
-            BuildableName = "TOTO.app"
+            BuildableName = "TOTO@SG.app"
             BlueprintName = "TOTO@SG"
             ReferencedContainer = "container:TOTO@SG.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6139DA941956FC2100F76ACC"
-            BuildableName = "TOTO.app"
+            BuildableName = "TOTO@SG.app"
             BlueprintName = "TOTO@SG"
             ReferencedContainer = "container:TOTO@SG.xcodeproj">
          </BuildableReference>

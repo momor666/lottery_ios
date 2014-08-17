@@ -19,7 +19,7 @@
 NSString *const Group1LocationsTag = @"{Group1Locations}";
 NSString *const Group2LocationsTag = @"{Group2Locations}";
 NSString *const NewLineTag = @"\r\n";
-NSString *const DisplayTemplate = @"<div style='font-family:Helvetica;'><div style='color:green;font-weight:600;text-align:center'>Winning Booths</div><div style='color:green;font-weight:600;'>Group 1</div>{Group1Locations}<br /><br /><div style='color:green;font-weight:600;'>Group 2</div>{Group2Locations}</div>";
+NSString *const DisplayTemplate = @"<div style='font-family:Helvetica;'><div style='color:green;font-weight:600;'>Group 1</div>{Group1Locations}<br /><br /><div style='color:green;font-weight:600;'>Group 2</div>{Group2Locations}</div>";
 NSString *const DataNotAvailable = @"Data not available";
 
 @synthesize webView;
