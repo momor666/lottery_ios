@@ -10,7 +10,9 @@
 #import <MessageUI/MFMessageComposeViewController.h>
 #import <MessageUI/MFMailComposeViewController.h>
 
-@interface PageAppVC : UIViewController <UIPageViewControllerDataSource, UIPageViewControllerDelegate, UIActionSheetDelegate, MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate>
+@interface PageAppVC : UIViewController <UIPageViewControllerDataSource, UIPageViewControllerDelegate, UIActionSheetDelegate, MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate> {
+    UIAlertView *statusAlert;
+}
 @property (strong, nonatomic) UIPageViewController *pageController;
 @property (strong, nonatomic) NSMutableArray *results;
 @property (nonatomic) NSDate *date;

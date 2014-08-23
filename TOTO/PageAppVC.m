@@ -33,13 +33,18 @@
     
     if (_date == nil) {
         TOTOResultSet *latest = [[TOTOResultSet class] getLatestResult];
-        [_results addObject:latest];
-        _date = latest.resultDate;
-        
-        UIImage *refreshImage = [UIImage imageNamed:@"today_result.png"];
-        if (refreshImage != nil) {
-            UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithImage:refreshImage style:UIBarButtonItemStyleBordered target:self action:@selector(getLatest:)];
-            self.navigationItem.leftBarButtonItem = item;
+        if (latest == nil) {
+            [self showStatus:@"Computing" timeout:4.5];
+        }
+        else {
+            [_results addObject:latest];
+            _date = latest.resultDate;
+            
+            UIImage *refreshImage = [UIImage imageNamed:@"today_result.png"];
+            if (refreshImage != nil) {
+                UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithImage:refreshImage style:UIBarButtonItemStyleBordered target:self action:@selector(getLatest:)];
+                self.navigationItem.leftBarButtonItem = item;
+            }
         }
     }
     else {
@@ -245,6 +250,24 @@
         
         [self presentViewController:mailCont animated:YES completion:nil];
     }
+}
+
+- (void)showStatus:(NSString *)message timeout:(double)timeout {
+    statusAlert = [[UIAlertView alloc] initWithTitle:nil
+                                             message:message
+                                            delegate:nil
+                                   cancelButtonTitle:nil
+                                   otherButtonTitles:nil];
+    [statusAlert show];
+    [NSTimer scheduledTimerWithTimeInterval:timeout
+                                     target:self
+                                   selector:@selector(timerExpired:)
+                                   userInfo:nil
+                                    repeats:NO];
+}
+
+- (void)timerExpired:(NSTimer *)timer {
+    [statusAlert dismissWithClickedButtonIndex:0 animated:YES];
 }
 
 #pragma MFMessageComposeViewControllerDelegate

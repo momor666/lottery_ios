@@ -11,11 +11,12 @@
 #import "PageAppVC.h"
 
 @interface PastResultsTVC ()
-
+@property (nonatomic) int selectedRow;
 @end
 
 @implementation PastResultsTVC
 @synthesize results = _results;
+@synthesize selectedRow = _selectedRow;
 
 - (NSArray *)results
 {
@@ -112,10 +113,20 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Navigation logic may go here. Create and push another view controller.
-    UIViewController *appVC = [self.navigationController.viewControllers lastObject];
-    if ([appVC isKindOfClass:[PageAppVC class]]) {
-        NSDate *resultDate = [self.results objectAtIndex:indexPath.row];
-        ((PageAppVC *)appVC).date = resultDate;
+//    UIViewController *appVC = [self.navigationController.viewControllers lastObject];
+//    if ([appVC isKindOfClass:[PageAppVC class]]) {
+//        NSDate *resultDate = [self.results objectAtIndex:indexPath.row];
+//        ((PageAppVC *)appVC).date = resultDate;
+//    }
+    _selectedRow = indexPath.row;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"ShowPageVC"]) {
+        PageAppVC *appVC = (PageAppVC *) segue.destinationViewController;
+        NSDate *resultDate = [self.results objectAtIndex:_selectedRow];
+        appVC.date = resultDate;
     }
 }
 

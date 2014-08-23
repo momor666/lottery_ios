@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7D2BD411-508C-41A7-B67D-2C320924B823</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TOTO@SG</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>39C74897-03D4-4046-9412-AF83D86F0BDF</key>
+		<string>https://github.com/ngxtri/lottery_ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TOTO@SG.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>39C74897-03D4-4046-9412-AF83D86F0BDF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ngxtri/lottery_ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>39C74897-03D4-4046-9412-AF83D86F0BDF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>39C74897-03D4-4046-9412-AF83D86F0BDF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>lottery_ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>

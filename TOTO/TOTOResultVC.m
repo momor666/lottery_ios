@@ -29,9 +29,6 @@
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *refreshBarButtonItem;
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView *indicator;
 
-- (IBAction)showActionSheet:(id)sender;
-- (void)rightSwipeHandle:(UISwipeGestureRecognizer*)gestureRecognizer;
-- (void)leftSwipeHandle:(UISwipeGestureRecognizer*)gestureRecognizer;
 @end
 
 @implementation TOTOResultVC

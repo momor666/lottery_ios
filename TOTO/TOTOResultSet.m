@@ -133,11 +133,16 @@ NSString * const WinningBooths = @"winning_booths";
 + (TOTOResultSet *)getResultAtUrl:(NSString *)url {
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
     NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-    NSError *jsonParsingError = nil;
-    NSDictionary *result = [NSJSONSerialization JSONObjectWithData:response options:0 error:&jsonParsingError];
     
-    TOTOResultSet *temp = [[TOTOResultSet class] initWithDictionary:result];
-    return temp;
+    if (response != nil) {
+        NSError *jsonParsingError = nil;
+        NSDictionary *result = [NSJSONSerialization JSONObjectWithData:response options:0 error:&jsonParsingError];
+        
+        TOTOResultSet *temp = [[TOTOResultSet class] initWithDictionary:result];
+        return temp;
+    }
+
+    return nil;
 }
 
 + (TOTOResultSet *)getLatestResult {
