@@ -60,4 +60,22 @@
     
     return result;
 }
+
++ (UIActivityIndicatorView *)getSpinner:(UIViewController *)vc {
+    UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    CGPoint aPoint;
+    aPoint.x = vc.view.bounds.size.width /2;
+    aPoint.y = vc.view.bounds.size.height/2;
+    [spinner setCenter:aPoint];
+    [spinner startAnimating];
+    return spinner;
+}
+
++ (void) showNoConnectionAlert:(UIViewController *)vc {
+    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"No Connection!"
+                                                    message:@"Failed while fetching data from server. Please check your connection and try again."
+                                                   delegate:vc cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
 @end

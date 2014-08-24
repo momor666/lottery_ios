@@ -23,6 +23,8 @@ typedef NS_ENUM(NSInteger, DayOfWeek) {
 + (NSString *)getResultDateForDisplay:(NSDate *)date;
 + (NSDate *)dateFromString:(NSString *)value;
 + (NSDate *)dateTimeFromString:(NSString *)value;
++ (UIActivityIndicatorView *)getSpinner:(UIViewController *)vc;
++ (void) showNoConnectionAlert:(UIViewController *)vc;
 @end
 
 @class WinningBoothsVC;

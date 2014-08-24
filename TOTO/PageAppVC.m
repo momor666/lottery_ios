@@ -9,6 +9,11 @@
 #import "PageAppVC.h"
 #import "TOTOResultVC.h"
 
+typedef NS_ENUM(NSInteger, FromVC) {
+    FromLatestResultVC,
+    FromPastResultVC
+};
+
 @interface PageAppVC ()
 - (IBAction)showActionSheet:(id)sender;
 //- (IBAction)getLatest:(id)sender;
@@ -30,29 +35,52 @@
 - (void) initializeContent
 {
     _results = [[NSMutableArray alloc] init];
+    UIActivityIndicatorView *spinner = [[Utilities class] getSpinner:self];
     
+    // set left navigation bar button
     if (_date == nil) {
-        TOTOResultSet *latest = [[TOTOResultSet class] getLatestResult];
-        if (latest == nil) {
-            [self showStatus:@"Computing" timeout:4.5];
-        }
-        else {
-            [_results addObject:latest];
-            _date = latest.resultDate;
-            
-            UIImage *refreshImage = [UIImage imageNamed:@"today_result.png"];
-            if (refreshImage != nil) {
-                UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithImage:refreshImage style:UIBarButtonItemStyleBordered target:self action:@selector(getLatest:)];
-                self.navigationItem.leftBarButtonItem = item;
-            }
+        UIImage *refreshImage = [UIImage imageNamed:@"today_result.png"];
+        if (refreshImage != nil) {
+            UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithImage:refreshImage style:UIBarButtonItemStyleBordered target:self action:@selector(getLatest:)];
+            self.navigationItem.leftBarButtonItem = item;
         }
     }
     else {
-        TOTOResultSet *one = [[TOTOResultSet class] getResultForDate:_date];
-        [_results addObject:one];
-        
         self.navigationItem.leftBarButtonItem = leftButton;
     }
+    
+    dispatch_queue_t aQueue = dispatch_queue_create("GetResult", NULL);
+    dispatch_async(aQueue, ^{
+        TOTOResultSet *resultSet = nil;
+        FromVC fromVCType = FromLatestResultVC;
+        
+        if (_date == nil) {
+            fromVCType = FromLatestResultVC;
+            resultSet = [[TOTOResultSet class] getLatestResult];
+        }
+        else {
+            fromVCType = FromPastResultVC;
+            resultSet = [[TOTOResultSet class] getResultForDate:_date];
+        }
+        
+        if (resultSet == nil) {
+            dispatch_async(dispatch_get_main_queue(), ^ {
+                [spinner removeFromSuperview];
+                [[Utilities class] showNoConnectionAlert:self];
+            });
+        }
+        else {
+            [_results addObject:resultSet];
+            _date = resultSet.resultDate;
+            
+            dispatch_async(dispatch_get_main_queue(), ^ {
+                TOTOResultVC *vc = (TOTOResultVC *) [_pageController.viewControllers objectAtIndex:0];
+                vc.resultSet = resultSet;
+                self.navigationItem.title = [resultSet getResultDateForDisplay];
+                [spinner removeFromSuperview];
+            });
+        }
+    });
     
     
     NSDictionary *options = [NSDictionary dictionaryWithObject:
@@ -69,7 +97,9 @@
     [[_pageController view] setFrame:[[self view] bounds]];
     
     TOTOResultVC *initialViewController = [self viewControllerAtIndex:0];
-    self.navigationItem.title = [initialViewController.resultSet getResultDateForDisplay];
+//    if (initialViewController.resultSet != nil) {
+//        self.navigationItem.title = [initialViewController.resultSet getResultDateForDisplay];
+//    }
     NSArray *viewControllers = [NSArray arrayWithObject:initialViewController];
     
     [_pageController setViewControllers:viewControllers
@@ -80,6 +110,9 @@
     [self addChildViewController:_pageController];
     [[self view] addSubview:[_pageController view]];
     [_pageController didMoveToParentViewController:self];
+    
+    // show activity indicator
+    [self.view addSubview:spinner];
 }
 
 - (void)viewDidLoad
@@ -98,19 +131,8 @@
 - (TOTOResultVC *)viewControllerAtIndex:(NSUInteger)index
 {
     // Return the data view controller for the given index.
-    if (([self.results count] == 0) ||
-        (index >= [self.results count])) {
-        return nil;
-    }
-    
-    // Create a new view controller and pass suitable data.
-    /*
-     ContentViewController *dataViewController =
-     [[ContentViewController alloc] init];
-     */
-    
     TOTOResultVC *dataViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ResultScreen"];
-    dataViewController.resultSet = _results[index];
+    dataViewController.resultSet = ([self.results count] == 0 || index >= [self.results count]) ? nil : _results[index];
     return dataViewController;
 }
 
@@ -288,5 +310,7 @@
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+#pragma Helper functions
 
 @end

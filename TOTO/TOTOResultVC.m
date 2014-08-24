@@ -46,6 +46,7 @@
 
 - (void) setResultSet:(TOTOResultSet *)resultSet {
     _resultSet = resultSet;
+    [self updateUI];
 }
 
 - (void)viewDidLoad
@@ -131,22 +132,25 @@
 }
 - (void)updateUI{
     NSString *temp = @"";
-    for (int i=0; i<self.resultSet.winningNumbers.count - 1; i++) {
-        temp = [temp stringByAppendingString:[self.resultSet.winningNumbers objectAtIndex:i]];
-        temp = [temp stringByAppendingString:@"   "];
-    }
-    temp = [temp stringByAppendingString:[self.resultSet.winningNumbers objectAtIndex:5]];
     
-    self.navigationItem.title = [self.resultSet getResultDateForDisplay];
-    self.winningNumbers.text = temp;
-    self.additionalWinningNumber.text = [NSString stringWithFormat:@"%d", self.resultSet.additionalWinningNumber];
-
-    [self showWinningGroup:1 forShareAmountLabel:self.shareAmount1 forWinningSharesLabel:self.noOfShares1];
-    [self showWinningGroup:2 forShareAmountLabel:self.shareAmount2 forWinningSharesLabel:self.noOfShares2];
-    [self showWinningGroup:3 forShareAmountLabel:self.shareAmount3 forWinningSharesLabel:self.noOfShares3];
-    [self showWinningGroup:4 forShareAmountLabel:self.shareAmount4 forWinningSharesLabel:self.noOfShares4];
-    [self showWinningGroup:5 forShareAmountLabel:self.shareAmount5 forWinningSharesLabel:self.noOfShares5];
-    [self showWinningGroup:6 forShareAmountLabel:self.shareAmount6 forWinningSharesLabel:self.noOfShares6];
+    if (self.resultSet != nil) {
+        for (int i=0; i<self.resultSet.winningNumbers.count - 1; i++) {
+            temp = [temp stringByAppendingString:[self.resultSet.winningNumbers objectAtIndex:i]];
+            temp = [temp stringByAppendingString:@"   "];
+        }
+        temp = [temp stringByAppendingString:[self.resultSet.winningNumbers objectAtIndex:5]];
+        
+        self.navigationItem.title = [self.resultSet getResultDateForDisplay];
+        self.winningNumbers.text = temp;
+        self.additionalWinningNumber.text = [NSString stringWithFormat:@"%d", self.resultSet.additionalWinningNumber];
+        
+        [self showWinningGroup:1 forShareAmountLabel:self.shareAmount1 forWinningSharesLabel:self.noOfShares1];
+        [self showWinningGroup:2 forShareAmountLabel:self.shareAmount2 forWinningSharesLabel:self.noOfShares2];
+        [self showWinningGroup:3 forShareAmountLabel:self.shareAmount3 forWinningSharesLabel:self.noOfShares3];
+        [self showWinningGroup:4 forShareAmountLabel:self.shareAmount4 forWinningSharesLabel:self.noOfShares4];
+        [self showWinningGroup:5 forShareAmountLabel:self.shareAmount5 forWinningSharesLabel:self.noOfShares5];
+        [self showWinningGroup:6 forShareAmountLabel:self.shareAmount6 forWinningSharesLabel:self.noOfShares6];
+    }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
