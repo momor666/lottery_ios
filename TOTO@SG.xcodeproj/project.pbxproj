@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11C2AA8C19ABACA900FFE6E1 /* 02-Flat-Metal-Icon_120.png in Resources */ = {isa = PBXBuildFile; fileRef = 11C2AA8B19ABACA900FFE6E1 /* 02-Flat-Metal-Icon_120.png */; };
 		6139DA991956FC2100F76ACC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6139DA981956FC2100F76ACC /* UIKit.framework */; };
 		6139DA9B1956FC2100F76ACC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6139DA9A1956FC2100F76ACC /* Foundation.framework */; };
 		6139DA9D1956FC2100F76ACC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6139DA9C1956FC2100F76ACC /* CoreGraphics.framework */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11C2AA8B19ABACA900FFE6E1 /* 02-Flat-Metal-Icon_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "02-Flat-Metal-Icon_120.png"; path = "Resources/App Icons/02-Flat-Metal-Icon_120.png"; sourceTree = "<group>"; };
 		6139DA951956FC2100F76ACC /* TOTO@SG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TOTO@SG.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6139DA981956FC2100F76ACC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6139DA9A1956FC2100F76ACC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -229,6 +231,7 @@
 		61512D041997CA1800205E98 /* App Icons */ = {
 			isa = PBXGroup;
 			children = (
+				11C2AA8B19ABACA900FFE6E1 /* 02-Flat-Metal-Icon_120.png */,
 			);
 			name = "App Icons";
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			files = (
 				6139DAA31956FC2100F76ACC /* InfoPlist.strings in Resources */,
 				6139DAAB1956FC2100F76ACC /* Default.png in Resources */,
+				11C2AA8C19ABACA900FFE6E1 /* 02-Flat-Metal-Icon_120.png in Resources */,
 				6139DAAD1956FC2100F76ACC /* Default@2x.png in Resources */,
 				6139DAAF1956FC2100F76ACC /* Default-568h@2x.png in Resources */,
 				6139DAB21956FC2100F76ACC /* MainStoryboard.storyboard in Resources */,

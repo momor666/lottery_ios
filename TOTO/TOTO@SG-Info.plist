@@ -14,6 +14,7 @@
 		<dict>
 			<key>CFBundleIconFiles</key>
 			<array>
+				<string>02-Flat-Metal-Icon_120</string>
 				<string>Small App Icon.png</string>
 				<string>Big App Icon.png</string>
 			</array>
